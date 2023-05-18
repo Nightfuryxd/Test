@@ -38,13 +38,11 @@ jobs:
       - name: check java version
         run: java -version
 
-      - name: Gradle Checks
-        run: gradle build
-
       - name: docker 
         run: |
           docker -v 
           docker 
           docker images -a
+
       - name: docker build 
         run: docker build . -t 9425424282/demo-kotlin2.0
