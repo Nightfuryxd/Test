@@ -38,9 +38,6 @@ jobs:
       - name: check java version
         run: java -version
 
-      - name: gradlew build
-        run: ./gradlew build
-
       - name: docker 
         run: |
           docker -v 
