@@ -42,3 +42,6 @@ jobs:
         run: |
           docker -v 
           docker 
+          docker images -a
+      - name: docker build 
+        run: docker build . -t 9425424282/demo-kotlintest
